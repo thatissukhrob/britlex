@@ -1,3 +1,9 @@
+/* CUSTOM PROPS */
+:root {
+  --heading-color: #263238;
+  --text-color: #8F95A5;
+}
+
 /* GLOBAL */
 
 html {
@@ -18,11 +24,11 @@ body  {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: var(--text-color);
 }
 
 img {
@@ -34,15 +40,255 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* BUTTON */
+
+.sitenav-button {
+  padding: 17px 57px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  border: 3px solid var(--heading-color);
+  border-radius: 5px;
+}
+
+.site-hero-link-button {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 36px;
+  background-color: var(--heading-color);
+  color: #fff;
+  border-radius: 15px;
+  padding: 32px 117px;
+}
+
+.site-skill-button {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--heading-color);
+  border-radius: 5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+  width: 230px;
+  height: 60px;
+}
+
+.site-skill-button-bottom{
+  margin-top: 0px;
+}
+
 /* MAIN-CONTENT */
 
 .main-content {
   flex-grow: 1;
+}
+
+/* SITENAV */
+
+.sitenav {
+  padding-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.site-logo-link {
+  margin-right: auto;
+}
+
+.site-logo-img {
+  display: block;
+  object-fit: contain;
+  width: 105px;
+  height: 54px;
+}
+
+.sitenav-list {
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.sitenav-list-item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--heading-color);
+}
+
+/* SITE-HERO */
+
+.site-hero {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.site-hero-left {
+  flex-direction: column;
+  margin-top: 70px;
+  margin-right: auto;
+}
+
+.site-hero-heading-wrapper{
+  display: flex;
+}
+
+.site-hero-heading {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  width: 385px;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.site-hero-heading-img {
+  margin-left: 44px;
+}
+
+.site-hero-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  width: 530px;
+  margin-bottom: 90px;
+}
+
+/* SITE-SKILLS */
+
+.site-skills {
+  display: flex;
+}
+
+.site-skill-heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+}
+
+.site-skill-left {
+  flex-direction: column;
+  width: 435px;
+  height: 890px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-right: 20px;
+}
+
+.site-skill-left-img {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.site-skill-left-heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--heading-color);
+}
+
+.site-skill-left-text-wrapper {
+  width: 345px;
+  height: 190px;
+}
+
+.site-skill-left-text {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.site-skill-item-heading{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--heading-color);
+}
+
+.site-skill-text {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.site-skill-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.site-skill-list-item {
+  flex-direction: column;
+  width: 435px;
+  height: 530px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.site-skill-list-item-bottom {
+  width: 885px;
+  height: 340px;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.site-skill-list-item-bottom-wrapper{
+  display: flex;
+}
+
+.site-skill-list-item-field {
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.site-skill-img-writing {
+  display: block;
+  margin-left: auto;
+}
+
+.site-skill-img-reading {
+  display: block;
+  margin-left: -40px;
+  margin-bottom: 30px;
+}
+
+.site-skill-item-heading-listening {
+  margin-bottom: 30px;
 }
