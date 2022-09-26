@@ -181,6 +181,7 @@ a {
 
 .site-skills {
   display: flex;
+  margin-bottom: 200px;
 }
 
 .site-skill-heading {
@@ -296,4 +297,61 @@ a {
 
 .site-skill-item-heading-listening {
   margin-bottom: 30px;
+}
+
+/* SITE-INFO */
+
+.site-info {
+  display: flex;
+}
+
+.site-info-wrapper {
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.site-info-heading {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+}
+
+.site-info-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 635px;
+  margin-bottom: 50px;
+}
+
+.site-info-list-wrapper {
+  display: flex;
+}
+
+.site-info-list {
+  flex-direction: column;
+  margin-right: 140px   ;
+}
+
+.site-info-list-number {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--heading-color);
+}
+
+.site-info-list-type {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
 }
