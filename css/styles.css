@@ -355,3 +355,83 @@ a {
   font-weight: 400;
   font-size: 20px;
 }
+
+.site-info-img{
+  margin-bottom: 200px;
+}
+
+/* SITE-PRICING */
+
+
+.site-pricing-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  text-align: center;
+}
+
+.site-pricing-list {
+  display: flex;
+  list-style: none;
+}
+
+.site-pricing-list-item {
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.site-pricing-list-item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.site-pricing-list-item-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--heading-color);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.site-pricing-list-item-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;  
+  width: 380px;
+  height: 70px;
+}
+
+.site-pricing-list-item-price {
+  display: flex;
+  width: 240px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #eee;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 250px;
+}
+
+.price-amount {
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--heading-color);
+  margin-right: 10px;
+}
+
+.price-date {
+  font-size: 18px;
+}
+
+.site-pricing-list-item-heading-self-study {
+  margin-top: 60px;
+}
+
+.site-pricing-list-item-heading-live {
+  margin-top: 85px;
+}
