@@ -71,6 +71,15 @@ a {
   color: #fff;
   border-radius: 15px;
   padding: 32px 117px;
+  transition: opacity 0.3s ease;
+}
+
+.site-hero-link-button:hover {
+  opacity: 0.8;
+}
+
+.site-hero-link-button:active {
+  opacity: 0.6;
 }
 
 .site-skill-button {
@@ -87,10 +96,37 @@ a {
   text-align: center;
   width: 230px;
   height: 60px;
+  transition: opacity 0.3s ease;
+}
+
+.site-skill-button:hover {
+  opacity: 0.8;
+}
+
+.site-skill-button:active {
+  opacity: 0.6;
 }
 
 .site-skill-button-bottom{
   margin-top: 0px;
+}
+
+button {
+  text-align: center;
+  background-color: var(--heading-color);
+  color: #fff;
+  border-radius: 10px;
+  border: 0;
+  padding: 25px 70px;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
 }
 
 /* MAIN-CONTENT */
@@ -414,7 +450,6 @@ a {
   align-items: center;
   padding-left: 18px;
   padding-right: 18px;
-  margin-bottom: 250px;
 }
 
 .price-amount {
@@ -434,4 +469,109 @@ a {
 
 .site-pricing-list-item-heading-live {
   margin-top: 85px;
+}
+
+/* SITE-CONTACT */
+
+.site-contact {
+  margin-top: 200px;
+}
+
+.site-contact-field {
+  display: flex;
+}
+
+.site-contact-img {
+  margin-right: 110px;
+}
+
+.site-contact-heading {
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  width: 270px;
+  height: 80px;
+  color: #000;
+  margin-bottom: 35px
+}
+
+.site-contact-text {
+  padding: 0;
+  margin: 0;
+  width: 760px;
+  height: 60px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.site-cta-field {
+  display: flex;
+  align-items: center;
+}
+
+.site-contact-wrapper{
+  flex-direction: column;
+}
+
+.site-contact-form-wrapper {
+  display: flex;
+}
+
+.site-contact-input {
+  margin-right: 12px;
+  width: 450px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid #8f95a5;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.site-contact-divider{
+  border: 0;
+  height: 1px;
+  background-color: #c4c4c4;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+/* SITE-FOOTER */
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.site-footer-link {
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.site-footer-trap-list {
+  display: flex;
+}
+
+.site-footer-trap-item {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  margin-right: 30px;
+  list-style: symbols(circle);
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.site-footer-trap-item:hover {
+  opacity: 0.8;
+}
+
+.site-footer-trap-item:active {
+  opacity: 0.6;
 }
